@@ -3,7 +3,7 @@ const projectDb = require('./data/helpers/projectModel');
 const router = express.Router();
 
 // GET
-router.get('/', async (req, res) => {
+router.get('/projects', async (req, res) => {
     try {
         const projects = await projectDb.get()
         res.status(200).json(projects)
@@ -54,7 +54,7 @@ router.put('/:id', (req, res) => {
 });
 
 // DELETE
-router.delete('/:id', async (req, res) => {
+router.delete('/01-projects/:id', async (req, res) => {
     try {
         const result = await projectDb.remove(req.params.id)
         res.status(200).json({ status: `User Id: ${result} has been deleted.`})
