@@ -22,7 +22,7 @@ router.post('/', (req, res) => {
         })
         .catch(err => {
             res.status(400).json({
-                message: "error posting on action, type in a name, project_id, and description."
+                message: "error posting on action, type in a note, project_id, and description."
             });
         });
 });
