@@ -5,7 +5,7 @@ const router = express.Router();
 // GET
 router.get('/', async (req, res) => {
     try {
-        const projects = await.projectDb.get()
+        const projects = await projectDb.get()
         res.status(200).json(projects)
     }
     catch {
@@ -26,7 +26,7 @@ router.post('/', async (req, res) => {
 });
 
 // PUT
-router.put('/:id',, (req, res) => {
+router.put('/:id', (req, res) => {
     if (!req.body || !req.body.name || !req.body.description) {
         console.log('please fill out necessary information');
         res.status(500).json({
