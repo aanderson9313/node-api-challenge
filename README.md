@@ -40,13 +40,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+A- express is a light framework that works with node.js. its single threaded and allows for faster app developement. 
+
 - [ ] Describe Middleware?
+
+A- middleware allows you to define actions that you should flow through. functions that can get request and response objects and when called upon, trigger an action.
 
 - [ ] Describe a Resource?
 
+A- an object with a type, associated data, relationships to other resources, and a set of methods that operate on it.
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+A-HTTP response status codes and messages.
+
 - [ ] How can we partition our application into sub-applications?
+
+A- by using Middleware for the api handles JSON, errors, and core web pages.
 
 ## Minimum Viable Product
 
